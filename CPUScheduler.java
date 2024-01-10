@@ -22,6 +22,7 @@ class Process implements Comparable<Process> {
     @Override
     public int compareTo(Process other) {
         // Higher priority (lower value) comes first
+    	
         return Integer.compare(this.priority, other.priority);
     }
 }
